@@ -11,7 +11,7 @@
     "postinstall": "remix setup node",
     "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/tailwind.css",
     "start": "cross-env NODE_ENV=production remix-serve build"
-},
+  },
   "dependencies": {
     "@prisma/client": "^4.2.1",
     "@remix-run/node": "^1.7.0",
@@ -19,7 +19,8 @@
     "@remix-run/serve": "^1.7.0",
     "prisma": "^4.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-highlight-words": "^0.18.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.7.0",
@@ -27,6 +28,7 @@
     "@types/pg": "^8.6.5",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/react-highlight-words": "^0.16.4",
     "autoprefixer": "^10.4.8",
     "concurrently": "^7.3.0",
     "cross-env": "^7.0.3",

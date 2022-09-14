@@ -7,10 +7,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import styles from "./styles/app.css"
+import styles from "./tailwind.css"
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+      { rel: 'stylesheet', href: styles },
+      { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
@@ -26,7 +29,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="app w-screen h-screen overflow-hidden flex flex-col dark:bg-gray-900">
+      <body className="app w-full h-screen flex flex-col dark:bg-gray-700 overflow-y-scroll">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
