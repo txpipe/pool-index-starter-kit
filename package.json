@@ -11,7 +11,7 @@
     "postinstall": "remix setup node",
     "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/tailwind.css",
     "start": "cross-env NODE_ENV=production remix-serve build"
-},
+  },
   "dependencies": {
     "@prisma/client": "^4.2.1",
     "@remix-run/node": "^1.7.0",
