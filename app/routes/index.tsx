@@ -22,7 +22,7 @@ const PoolCard = (props: { data: Pool }) => {
     return (
         <div className="flex flex-col justify-between p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <div>
-                <h5 className="mb-1 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-ellipsis overflow-hidden">{props.data.name}</h5>
+                <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-ellipsis overflow-hidden">{props.data.name}</h5>
                 <h6 className="mb-2 text-lg font-semibold tracking-tight text-gray-500">{props.data.ticker}</h6>
                 <p className="mb-3 text-base font-normal text-gray-500 dark:text-gray-400">{props.data.description}</p>
             </div>
