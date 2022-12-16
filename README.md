@@ -2,7 +2,7 @@
 
 This starter kit shows how to build a simple application which queries [DB-sync](https://docs.cardano.org/cardano-components/cardano-db-sync/about-db-sync) for displaying a list of Stake Pools. 
 
-<img src="public/example.png" alt="example">
+<img src="public/pool-index-example.png" alt="example">
 
 ## Dev Environment
 
@@ -134,8 +134,8 @@ For doing this in the [Demeter.run](https://demeter.run) console go to your work
 
 From this tab you can select to expose a new port. 
 
-<img src="/public/expose-port-new.png" alt="expose-port-new">
+<img src="/public/pool-index-expose-port.png" alt="expose-port-new">
 
 Once your port is exposed you can click en the auto generated URL and it should open a new browser tab with your application running.
 
-<img src="/public/expose-port-list.png" alt="expose-port-list">
+<img src="/public/pool-index-exposed-ports.png" alt="expose-port-list">

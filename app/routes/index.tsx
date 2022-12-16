@@ -24,12 +24,12 @@ const PoolItem = (props: { value: string, searchText: string }) => {
 const PoolCard = (props: { data: Pool, searchText: string }) => {
     return (
         <a href={props.data.homepage} target="_blank" rel="noreferrer" className="flex flex-col p-6 rounded-md bg-gray-900 transition-all shadow-lg cursor-pointer rounded-md">
-            <h5 className="text-2xl font-light tracking-wide text-ellipsis overflow-hidden">
-                <PoolItem value={props.data.name} searchText={props.searchText} />
-            </h5>
-            <h6 className="mb-2 text-lg tracking-tight text-txblue">
+            <h6 className="text-lg tracking-tight text-txblue">
                 <PoolItem value={props.data.ticker} searchText={props.searchText} />
             </h6>
+            <h5 className="text-2xl font-light tracking-wide text-ellipsis overflow-hidden mb-2">
+                <PoolItem value={props.data.name} searchText={props.searchText} />
+            </h5>
             <p className="mb-3 text-base font-normal text-gray-500 dark:text-gray-400">
                 <PoolItem value={props.data.description} searchText={props.searchText} />
             </p>
